@@ -1,14 +1,14 @@
-/* Cake Crest - Main Stylesheet */
+/* CrestFoods - Main Stylesheet */
 
 /* CSS Variables */
 :root {
-    --primary-color: #c9a86c;
-    --secondary-color: #2c1810;
-    --accent-color: #e74c3c;
+    --primary-color: #dc3545;
+    --secondary-color: #8b0000;
+    --accent-color: #ff6b6b;
     --text-dark: #333;
     --text-light: #fff;
-    --bg-light: #faf8f5;
-    --bg-cream: #fff9f0;
+    --bg-light: #fefafa;
+    --bg-cream: #fff5f5;
 
     /* Category Colors */
     --food-primary: #e74c3c;

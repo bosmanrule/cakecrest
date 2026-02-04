@@ -1,7 +1,7 @@
-// Cake Crest - Main Application JavaScript
+// CrestFoods - Main Application JavaScript
 
 // Cart State
-let cart = JSON.parse(localStorage.getItem('cakecrest_cart')) || [];
+let cart = JSON.parse(localStorage.getItem('crestfoods_cart')) || [];
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -63,7 +63,7 @@ function updateCartCount() {
 
 // Save cart to localStorage
 function saveCart() {
-    localStorage.setItem('cakecrest_cart', JSON.stringify(cart));
+    localStorage.setItem('crestfoods_cart', JSON.stringify(cart));
     updateCartCount();
 }
 
@@ -519,7 +519,7 @@ function placeOrder() {
         date: new Date().toISOString()
     };
 
-    localStorage.setItem('cakecrest_lastOrder', JSON.stringify(orderDetails));
+    localStorage.setItem('crestfoods_lastOrder', JSON.stringify(orderDetails));
 
     // Clear cart
     clearCart();
@@ -530,7 +530,7 @@ function placeOrder() {
 
 // ============ Confirmation Page ============
 function initConfirmationPage() {
-    const orderDetails = JSON.parse(localStorage.getItem('cakecrest_lastOrder'));
+    const orderDetails = JSON.parse(localStorage.getItem('crestfoods_lastOrder'));
 
     if (!orderDetails) {
         window.location.href = 'index.html';
